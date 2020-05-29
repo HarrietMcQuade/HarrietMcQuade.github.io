@@ -36,7 +36,7 @@ margin-bottom: 0px;
 
 
 /* Styling for About US */
-.paragraph1 {
+/* .paragraph1 {
   color:black;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -44,7 +44,20 @@ margin-bottom: 0px;
   letter-spacing: 1.5px;
   line-height: 1.6;
   padding: 50px 0px 100px 0px;
+} */
+
+/* Styling for About US */
+.paragraph1 {
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-justify: inter-word;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-size: 14px;
+  padding: 50px 0px 100px 0px;
 }
+
 
 footer{
   text-align: center;
