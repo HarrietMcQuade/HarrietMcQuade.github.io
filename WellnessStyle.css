@@ -1,0 +1,124 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    background-color: linen;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    margin:20px;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+  
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  /* position: absolute;
+  left: 50%;
+  margin-left: -50px; */
+}
+
+  
+/* Style the button and place it in the middle of the container/image */
+.container button {
+  position: absolute;
+  align-items: inherit;
+  /* margin: 0 auto; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  background-color: rgb(117, 117, 117);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.container .btn:hover {
+  background-color: white;
+}
+
+/*This styles the hamburger menu- sets line width etc*/
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 70px;
+    left: 50px;
+    float: left;
+    margin-bottom: 1rem;
+    z-index: 4;
+  }
+  
+  .hamburger:before, .hamburger:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: black;
+  position: absolute;}
+  
+  .hamburger:before {
+    top: 0;
+  }
+  
+  .hamburger:after {
+    bottom: 0;
+  }
+  
+  .hamburger span {
+    width: 30px;
+    height: 5px;
+    display: block;
+    background:black;
+    position: absolute;
+    top: 7.5px;
+  }
+  
+  /* this controls the menu that transitions when you click on the burger menu*/
+  
+  nav.nav2 {
+    width: 300px;
+    height: 100vh;
+    z-index: 4;
+    position: fixed;
+    top: 100px;
+    left: -500px;
+    transition: 0.5s all ease;
+    background-color:linen;
+  }
+  
+  nav.nav2.active {
+  left: 20px;
+  }
+  
+  
+  @media only screen and (min-width: 992px) {
+  nav.nav1 {
+    flex-direction: column;
+  }
+}
+
+footer{
+  text-align: center;
+  font-size: 10px;
+  padding-top: 200px;
+}
+  

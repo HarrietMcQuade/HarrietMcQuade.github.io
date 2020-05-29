@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+<div class='Title'> 
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ContactPageCss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</div>
+</head>
+<h1> Contact Us </h1>
+  </div>
+  <div class = "paragraphContact">
+    <p> Share Your Positive Stories </p>
+  </div>
+
+  <body> 
+    <div class="hamburger"><span></span></div>
+ 			<nav class="nav2">
+        <ul>
+          <li><a href="EscapePage.html">ESCAPE</a></li>
+          <li><a href="CreatePage.html">CREATE</a></li>
+          <li><a href="InspirePage.html">INSPIRE</a></li>
+          <li><a href="AboutUsPage.html">ABOUT</a></li>
+          <li><a href="GetinTouchPage.html">CONTACT</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="Wellness.html">WELLNESS QUIZ</a></li>
+      </ul>
+      </nav>
+    </div>
+  </div> 
+
+<!-- GRID CONTAINER FOR IMAGES -->
+<div class="container">
+  <div class="gallery">
+      <div class="gallery__item gallery__item--1">
+          <img src="https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Gallery image 1" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--2">
+          <img src="https://images.unsplash.com/photo-1504464185773-b35f3ce53c68?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="Gallery image 2" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--3">
+          <img src="https://images.unsplash.com/photo-1551806235-6692cbfc690b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Gallery image 3" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--4">
+          <img src="https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gallery image 4" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--5">
+          <img src="https://images.unsplash.com/photo-1586769852351-8791d2bb43be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" class="gallery__img">
+      </div>
+      <div class="gallery__item gallery__item--6">
+          <img src="https://images.unsplash.com/photo-1485115905815-74a5c9fda2f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=661&q=80" alt="Gallery image 6" class="gallery__img">
+      </div>
+  </div>
+</div>
+<!-- FORM FIELDS AND LINK TO VALIDATION FUNCTION -->
+<form name="form" method="post" onsubmit="return validate_form();">
+<div class="form">
+  <div class="name">
+    <input type="text" id="name" name="name" placeholder="Your Name:       " required/>
+  </div>
+  <div class="email">
+    <input type="text" id="email" name="email" placeholder="Email address:   " required/>
+  </div>
+  <div class="dob">
+    <input type="date" id="date" name="date" placeholder="Date of Birth"/>
+  </div>
+  <div class="freeText"> 
+    <textarea id="Sharewithus" name="Sharewithus" placeholder="Share with us your positive story or links" style="height:200px"></textarea>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" checked="checked" name="subscribe"> Subscribe to our Weekly Newsletter for more positive vibes!
+    </label>
+  </div>
+  <div class="submit">
+  <input type="submit" value="Submit">
+  </div>
+</div>
+</form>
+
+</body>
+
+
+
+<footer>Copyright Covid-19 Wellness Hub 2020</footer>
+</html>

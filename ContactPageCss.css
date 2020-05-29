@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family:'Montserrat', sans-serif; 
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+
+/*This styles the hamburger menu- sets line width etc*/
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: fixed;
+  top: 70px;
+  left: 50px;
+  float: left;
+  margin-bottom: 1rem;
+  z-index: 4;
+}
+
+.hamburger:before, .hamburger:after {
+content: "";
+display: block;
+width: 30px;
+height: 5px;
+background: black;
+position: absolute;}
+
+.hamburger:before {
+  top: 0;
+}
+
+.hamburger:after {
+  bottom: 0;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 5px;
+  display: block;
+  background:black;
+  position: absolute;
+  top: 7.5px;
+}
+
+/* this controls the menu that transitions when you click on the burger menu*/
+
+nav.nav2 {
+  width: 300px;
+  height: 100vh;
+  z-index: 4;
+  position: fixed;
+  top: 100px;
+  left: -500px;
+  transition: 0.5s all ease;
+}
+
+nav.nav2.active {
+left: 20px;
+}
+
+
+@media only screen and (min-width: 992px) {
+nav.nav1 {
+  flex-direction: column;
+}
+}
+
+
+/* This contains the grid of images */
+.container {
+  width: 60%;
+  align-content: center;
+  margin: 2rem auto; 
+  z-index: 0;
+  background-position: center;
+}
+
+/* This specifies the grid - you can increase columns/rows as required */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+/* This ensures the images fit the grid boxes */
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+  }
+
+/* Each image in the html contains it's own div so they can be moved around the grid */
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.textlayover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__item--2 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--3 {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+.gallery__item--5 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.gallery__item--6 {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  grid-row-end: 10;
+}
+
+
+.gallery__item{
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.gallery__item:hover {
+    transform:scale(0.9);
+}
+
+
+
+
+.form{
+    width: 60%;
+    height: auto;
+    align-content: center;
+    margin: 3rem auto; 
+    padding: 3rem;
+    z-index: 4;
+    bottom: 2rem;
+    background-color: rgb(253, 251, 250);
+    filter: opacity(90%);
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    justify-content: space-evenly;
+  }
+    
+
+
+.placeholder{
+    font-family: 'Nunito', sans-serif;
+
+}
+
+label{
+    width:240px;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.dob{
+  padding: 0.5rem;
+  margin-left: 130px;
+}
+
+.freeText{
+  padding: 0.5rem;
+  margin-left: 130px;
+}
+
+.submit{
+  display: flex; 
+}
+
+.email{
+  padding: 0.5rem;
+  margin-left: 130px;
+}
+
+.checkbox{
+  padding: 0.5rem;
+  margin-left: 190px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.name{
+    font-family: 'Nunito', sans-serif;
+    /* width: 100%; */
+    padding: 0.5rem;
+    margin-left: 130px;
+}
+
+ /*Style the submit button with a specific background color etc*/ 
+  input[type=submit] {
+    background-color: lightseagreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 130px;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    width: 500px;
+    font-family: 'Nunito', sans-serif;
+}
+  
+  /*When moving the mouse over the submit button, add a darker green color*/ 
+  input[type=submit]:hover {
+    background-color: darkslategray;
+}
+  
+input#name{
+  width:500px;
+  padding: 0.5rem;
+}
+
+input#email{
+  width: 500px;
+  padding:0.5rem;
+}
+
+input#date{
+  width:500px;
+  padding:0.5rem;
+}
+
+textarea#Sharewithus{
+  width: 500px;
+  padding:0.5rem;
+}
+
+
+
+footer{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom:10px;
+  'Nunito', sans-serif
+}
+
+

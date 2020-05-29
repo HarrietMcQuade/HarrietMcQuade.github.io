@@ -1,0 +1,110 @@
+
+/* Homepage -font and styling for main title, body and menu text*/
+html{
+    background-color: linen;
+}
+
+
+ul{
+    list-style-type: none;
+    font-family: 'Nunito', sans-serif; 
+    font-size: 2rem;
+    color: black;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+/* styling for background*/
+ 
+  
+h1{
+    font-family: 'Nunito', sans-serif; 
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 2rem;
+    align-content: center;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+header{
+    background-color: linen;
+}
+
+footer{
+    text-align: center;
+
+}
+
+/*All pages >This styles the hamburger menu- sets line width etc*/
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    position: fixed;
+    top: 70px;
+    left: 50px;
+	float: left;
+    margin-bottom: 1rem;
+    z-index: 4;
+}
+
+.hamburger:before, .hamburger:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: black;
+	position: absolute;}
+
+.hamburger:before {
+    top: 0;
+}
+
+.hamburger:after {
+    bottom: 0;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 5px;
+    display: block;
+    background:black;
+    position: absolute;
+    top: 7.5px;
+}
+
+/* All pages>this controls the menu that transitions when you click on the burger menu*/
+
+nav.nav2 {
+    width: 300px;
+    height: 100vh;
+    z-index: 4;
+    position: fixed;
+    top: 100px;
+    left: -500px;
+    transition: 0.5s all ease;
+
+}
+
+nav.nav2.active {
+	left: 20px;
+}
+
+
+@media only screen and (min-width: 992px) {
+	nav.nav1 {
+		flex-direction: column;
+	}
+  }
+
+
