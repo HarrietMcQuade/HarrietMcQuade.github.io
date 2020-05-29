@@ -51,6 +51,13 @@ h3 {
   font-size: 22px;
 }
 
+.blurb p {
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
 
 /* p {
     font-family: 'Nunito', sans-serif; 
