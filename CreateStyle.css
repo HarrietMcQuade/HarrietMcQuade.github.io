@@ -19,32 +19,18 @@ body {
   line-height: 1.6; 
 }
 
-/* styling for background*/
-.showcase{
-  background-color: linen;
-  /*    height: 100vh; */
-  position: relative;
-}
 
-.showcase .showcase-inner {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 25%;
-  padding: 40px;
-  padding-bottom: 60px;
-  margin-bottom: 0px;
-}
-
-.showcase h1{
-  font-size: 3rem;
-  font-weight: lighter;
-  letter-spacing: 1.5px;
-  color:black;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+h1 {
+font-size: 3rem;
+font-weight: lighter;
+letter-spacing: 1.5px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+padding: 40px;
+padding-bottom: 60px;
+padding-top: 60px;
+margin-bottom: 0px;
 }
 
 
@@ -289,7 +275,7 @@ footer{
   opacity: 0.5;
 }
 
-.createblurb{
+.createblurb p {
   text-align: center;
   letter-spacing: 1.5px;
   line-height: 1.6;
