@@ -19,6 +19,22 @@ body {
 }
 
 
+h1 {
+font-size: 3rem;
+font-weight: lighter;
+letter-spacing: 1.5px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+padding: 40px;
+padding-bottom: 60px;
+padding-top: 60px;
+margin-bottom: 0px;
+}
+
+
+
+
 /*This styles the hamburger menu- sets line width etc*/
 
 .hamburger {
