@@ -279,7 +279,7 @@ footer{
 .createblurb p {
   text-align: center;
   align-items: center;
-  text-justify: inter-word;
+  font-weight: lighter;
   justify-content: center;
   letter-spacing: 1.5px;
   line-height: 1.6;
