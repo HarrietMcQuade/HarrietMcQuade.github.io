@@ -275,8 +275,10 @@ footer{
   opacity: 0.5;
 }
 
-.createblurb p {
+
+.createBlurb p {
   text-align: center;
   letter-spacing: 1.5px;
   line-height: 1.6;
+  font-size: 14px;
 }
