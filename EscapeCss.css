@@ -30,7 +30,7 @@ body {
   position: fixed;
   top: 70px;
   left: 50px;
-float: left;
+  float: left;
   margin-bottom: 1rem;
   z-index: 4;
 }
@@ -70,7 +70,6 @@ nav.nav2 {
   top: 100px;
   left: -500px;
   transition: 0.5s all ease;
-  background-color:linen;
 }
 
 nav.nav2.active {
@@ -261,4 +260,8 @@ footer{
   text-align: center;
   letter-spacing: 1.5px;
   line-height: 1.6;
+}
+
+p {
+  font-size: inherit;
 }
