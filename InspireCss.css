@@ -18,6 +18,22 @@ body {
   line-height: 1.6; 
 }
 
+
+h1 {
+font-size: 3rem;
+font-weight: lighter;
+letter-spacing: 1.5px;
+color: black;
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+padding: 40px;
+padding-bottom: 60px;
+padding-top: 60px;
+margin-bottom: 0px;
+}
+
+
+
 .container {
   width: 50%;
   align-items: center;
@@ -183,7 +199,7 @@ body {
   opacity: 0.5;
 }
 
-.inspireBlurb{
+.inspireBlurb p {
   text-align: center;
   letter-spacing: 1.5px;
   line-height: 1.6;
