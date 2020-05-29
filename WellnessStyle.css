@@ -34,6 +34,12 @@ a {
 }
 
 
+li {
+  width: 300px;
+  height: 32px;
+}
+
+
 .container {
   position: relative;
   width: 50%;
