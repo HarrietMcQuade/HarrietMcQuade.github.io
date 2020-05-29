@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family:'Nunito', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   color: #333;
   font-weight: 3rem;
   line-height: 1.6; 
@@ -279,6 +279,7 @@ footer{
 .createblurb p {
   text-align: center;
   align-items: center;
+  text-justify: inter-word;
   justify-content: center;
   letter-spacing: 1.5px;
   line-height: 1.6;
